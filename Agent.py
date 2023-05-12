@@ -174,7 +174,7 @@ class Agent:
                 f"\nHuman Feedback: {user_input} "
             )
 
-            #self.memory.add(memory_to_add)
+            self.memory.add(memory_to_add)
 
             if result is not None:
                 self.full_message_history.append(create_chat_message("system", result))
